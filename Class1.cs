@@ -19,7 +19,7 @@ namespace ConsoleApp4
     public class Tripezium: Area
     {
 
-        public double getArea(int a, int b, int h)
+        public double getArea(double a, double b, double h)
         {
 
             return 0.5 * (a + b) * h;
@@ -31,10 +31,10 @@ namespace ConsoleApp4
     public class Square : Area
     {
 
-        public double getArea(int s)
+        public double getArea(double s)
         {
 
-            return s^2;
+            return s*s;
 
         }
 
@@ -43,7 +43,7 @@ namespace ConsoleApp4
     public class Triangle : Area
     {
 
-        public double getArea(int b, int h)
+        public double getArea(double b, double h)
         {
 
             return 0.5 * b * h;
@@ -55,7 +55,7 @@ namespace ConsoleApp4
     public class Circle : Area
     {
         double pi = Math.PI;
-        public double getArea(int r)
+        public double getArea(double r)
         {
 
             return pi * r*r;

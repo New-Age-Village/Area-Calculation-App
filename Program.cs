@@ -25,14 +25,14 @@ namespace ConsoleApp4
                 if (shape == 1)
                 {
 
-                    int a = 0, b = 0, h = 0;
+                    double a = 0, b = 0, h = 0;
 
                     Console.WriteLine("Please enter the tripezium length value");
-                    a = int.Parse(Console.ReadLine());
+                    a = double.Parse(Console.ReadLine());
                     Console.WriteLine("Please enter the tripezium breath value");
-                    b = int.Parse(Console.ReadLine());
+                    b = double.Parse(Console.ReadLine());
                     Console.WriteLine("Please enter the tripezium height value");
-                    h = int.Parse(Console.ReadLine());
+                    h = double.Parse(Console.ReadLine());
 
                     Tripezium tripezium = new Tripezium();
 
@@ -43,7 +43,7 @@ namespace ConsoleApp4
                 else if (shape == 2)
                 {
                     Console.WriteLine("Please enter the square side value");
-                    int s = int.Parse(Console.ReadLine());
+                    double s = double.Parse(Console.ReadLine());
 
                     Square square = new Square();
 
@@ -54,9 +54,9 @@ namespace ConsoleApp4
                 else if (shape == 3)
                 {
                     Console.WriteLine("Please enter the triangle breath value");
-                    int b = int.Parse(Console.ReadLine());
+                    double b = double.Parse(Console.ReadLine());
                     Console.WriteLine("Please enter the triangle breath value");
-                    int h = int.Parse(Console.ReadLine());
+                    double h = double.Parse(Console.ReadLine());
 
                     Triangle triangle = new Triangle();
 
@@ -67,7 +67,7 @@ namespace ConsoleApp4
                 else if (shape == 4)
                 {
                     Console.WriteLine("Please enter the circle radius value");
-                    int r = int.Parse(Console.ReadLine());
+                    double r = double.Parse(Console.ReadLine());
             
              
 
