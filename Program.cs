@@ -15,7 +15,7 @@ namespace ConsoleApp4
 
             bool looper = true;
 
-            Console.WriteLine("Please select a shape \n 1. Tripezium \n 2. Square \n 3. Triangle \n 4. Circle");
+            Console.WriteLine("Please select a shape \n 1. Tripezium \n 2. Square \n 3. Triangle \n 4. Circle \n 5. Rectangle");
             int shape = int.Parse(Console.ReadLine());
       
            
@@ -29,7 +29,7 @@ namespace ConsoleApp4
 
                     Console.WriteLine("Please enter the tripezium length value");
                     a = double.Parse(Console.ReadLine());
-                    Console.WriteLine("Please enter the tripezium breath value");
+                    Console.WriteLine("Please enter the tripezium breadth value");
                     b = double.Parse(Console.ReadLine());
                     Console.WriteLine("Please enter the tripezium height value");
                     h = double.Parse(Console.ReadLine());
@@ -53,9 +53,9 @@ namespace ConsoleApp4
 
                 else if (shape == 3)
                 {
-                    Console.WriteLine("Please enter the triangle breath value");
+                    Console.WriteLine("Please enter the triangle base value");
                     double b = double.Parse(Console.ReadLine());
-                    Console.WriteLine("Please enter the triangle breath value");
+                    Console.WriteLine("Please enter the triangle height value");
                     double h = double.Parse(Console.ReadLine());
 
                     Triangle triangle = new Triangle();
@@ -77,10 +77,25 @@ namespace ConsoleApp4
                     break;
                 }
 
+                else if (shape == 5)
+                {
+                    Console.WriteLine("Please enter the rectangle length value");
+                    double l = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Please enter the rectangle width value");
+                    double w = double.Parse(Console.ReadLine());
+
+
+
+                    Rectangle rectangle = new Rectangle();
+
+                    Console.WriteLine("The Area is: " + rectangle.getArea(l, w));
+                    break;
+                }
+
                 else 
                 {
 
-                    Console.WriteLine("Invalid selection \n Please select a correct shape: \n 1. Tripezium \n 2. Square \n 3. Triangle \n 4. Circle");
+                    Console.WriteLine("Invalid selection \n Please select a correct shape: \n 1. Tripezium \n 2. Square \n 3. Triangle \n 4. Circle \n 5. Rectangle");
                     shape = int.Parse(Console.ReadLine());
                     looper = false;
 
